@@ -2,11 +2,16 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { SearchPage } from '../pages/search/search';
+import { MyPagePage } from '../pages/my-page/my-page';
+import { ParkingLotViewPage } from '../pages/parking-lot-view/parking-lot-view';
+import { TabsControllerPage } from '../pages/tabs-controller/tabs-controller';
+import { LoginPage } from '../pages/login/login';
+import { StatisticsPage } from '../pages/statistics/statistics';
+import { AuthorizingPagePage } from '../pages/authorizing-page/authorizing-page';
+import { AddUserPage } from '../pages/add-user/add-user';
+import { NewParkingLotPage } from '../pages/new-parking-lot/new-parking-lot';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -14,10 +19,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+    SearchPage,
+    MyPagePage,
+    ParkingLotViewPage,
+    TabsControllerPage,
+    LoginPage,
+    StatisticsPage,
+    AuthorizingPagePage,
+    AddUserPage,
+    NewParkingLotPage
   ],
   imports: [
     BrowserModule,
@@ -26,10 +36,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+    SearchPage,
+    MyPagePage,
+    ParkingLotViewPage,
+    TabsControllerPage,
+    LoginPage,
+    StatisticsPage,
+    AuthorizingPagePage,
+    AddUserPage,
+    NewParkingLotPage
   ],
   providers: [
     StatusBar,
